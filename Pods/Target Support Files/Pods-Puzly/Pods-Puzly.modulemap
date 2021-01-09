@@ -1,0 +1,6 @@
+framework module Pods_Puzly {
+  umbrella header "Pods-Puzly-umbrella.h"
+
+  export *
+  module * { export * }
+}

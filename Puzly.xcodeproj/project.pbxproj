@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3708EA2574F82A0082AD11 /* PuzlyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3708E92574F82A0082AD11 /* PuzlyBrain.swift */; };
+		1A3708ED25750FEF0082AD11 /* UIView+RemoveConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3708EC25750FEF0082AD11 /* UIView+RemoveConstraints.swift */; };
+		1A7270A8256D0295003CF85F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7270A7256D0295003CF85F /* AppDelegate.swift */; };
+		1A7270AA256D0295003CF85F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7270A9256D0295003CF85F /* SceneDelegate.swift */; };
+		1A7270AC256D0295003CF85F /* PlayBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7270AB256D0295003CF85F /* PlayBoardViewController.swift */; };
+		1A7270AF256D0295003CF85F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7270AD256D0295003CF85F /* Main.storyboard */; };
+		1A7270B1256D0296003CF85F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A7270B0256D0296003CF85F /* Assets.xcassets */; };
+		1A7270B4256D0296003CF85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7270B2256D0296003CF85F /* LaunchScreen.storyboard */; };
+		1AF77BE925713897007E086C /* ImageTileState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF77BE825713897007E086C /* ImageTileState.swift */; };
+		6664C5F27240CF4556BB21CD /* Pods_Puzly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFD2716AE6B8AB486F307C8 /* Pods_Puzly.framework */; };
+		7D26B4F72577CBD30090489F /* timeburnernormal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D26B4F52577CB850090489F /* timeburnernormal.ttf */; };
+		7D26B4FA2577D36D0090489F /* timeburnerbold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D26B4F92577D3670090489F /* timeburnerbold.ttf */; };
+		7D4C628D257FDCDC0010ACF4 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C628C257FDCDC0010ACF4 /* CropViewController.swift */; };
+		7D4C629B2580D6280010ACF4 /* PlayPhotos in Resources */ = {isa = PBXBuildFile; fileRef = 7D4C629A2580D6280010ACF4 /* PlayPhotos */; };
+		7D4C62A025813BC10010ACF4 /* PassThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C629F25813BC10010ACF4 /* PassThrough.swift */; };
+		7D4C62CB2582833A0010ACF4 /* move.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D4C62C9258283280010ACF4 /* move.wav */; };
+		7D4C62D5258294760010ACF4 /* cheers.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D4C62D4258294760010ACF4 /* cheers.wav */; };
+		7D4C62D8258295C90010ACF4 /* shuffle.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7D4C62D7258295C90010ACF4 /* shuffle.wav */; };
+		7D4C62ED2583630C0010ACF4 /* success.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D4C62EC2583630C0010ACF4 /* success.mp3 */; };
+		7D4C62FF2583A9FA0010ACF4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C62FE2583A9FA0010ACF4 /* UIViewController+Alert.swift */; };
+		7D4C6315258807880010ACF4 /* String+makePlural.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C6314258807880010ACF4 /* String+makePlural.swift */; };
+		7D74D1A2258B6B5B006AF1A1 /* TileMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D19C258B6B5B006AF1A1 /* TileMaker.swift */; };
+		7D74D1A3258B6B5B006AF1A1 /* TimerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D19D258B6B5B006AF1A1 /* TimerHelper.swift */; };
+		7D74D1A4258B6B5B006AF1A1 /* SoundHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D19E258B6B5B006AF1A1 /* SoundHelper.swift */; };
+		7D74D1A5258B6B5B006AF1A1 /* PhotosLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D19F258B6B5B006AF1A1 /* PhotosLoader.swift */; };
+		7D74D1AA258B6BB0006AF1A1 /* UIView+FadeInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D1A9258B6BAF006AF1A1 /* UIView+FadeInOut.swift */; };
+		7D74D1AD258B6BC1006AF1A1 /* UIView+AddBorders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D1AC258B6BC1006AF1A1 /* UIView+AddBorders.swift */; };
+		7D74D1B0258B6BCF006AF1A1 /* CGPoint+Nearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D1AF258B6BCF006AF1A1 /* CGPoint+Nearest.swift */; };
+		7D74D1B4258B6BE9006AF1A1 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D74D1B3258B6BE9006AF1A1 /* PhotosCollectionViewCell.swift */; };
+		7D9D0C41257BDE5B004465E5 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D0C40257BDE5B004465E5 /* ShadowView.swift */; };
+		7D9D0C48257BFDEF004465E5 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D0C47257BFDEF004465E5 /* Palette.swift */; };
+		7D9D0C6A257D587D004465E5 /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D0C69257D587D004465E5 /* SAConfettiView.swift */; };
+		7D9D0C7A257E1FBA004465E5 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D0C79257E1FBA004465E5 /* IntroViewController.swift */; };
+		7DAA0D3F258A001700AD86A1 /* UIButton+setSoundButtonInitialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DAA0D3E258A001700AD86A1 /* UIButton+setSoundButtonInitialState.swift */; };
+		7DB7AB292588C80900F07076 /* SoundOnOffButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB7AB282588C80900F07076 /* SoundOnOffButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1A3708E92574F82A0082AD11 /* PuzlyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzlyBrain.swift; sourceTree = "<group>"; };
+		1A3708EC25750FEF0082AD11 /* UIView+RemoveConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RemoveConstraints.swift"; sourceTree = "<group>"; };
+		1A7270A4256D0295003CF85F /* Puzly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Puzly.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7270A7256D0295003CF85F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A7270A9256D0295003CF85F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A7270AB256D0295003CF85F /* PlayBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBoardViewController.swift; sourceTree = "<group>"; };
+		1A7270AE256D0295003CF85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A7270B0256D0296003CF85F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A7270B3256D0296003CF85F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A7270B5256D0296003CF85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF77BE825713897007E086C /* ImageTileState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTileState.swift; sourceTree = "<group>"; };
+		3BFD2716AE6B8AB486F307C8 /* Pods_Puzly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Puzly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D26B4F52577CB850090489F /* timeburnernormal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeburnernormal.ttf; sourceTree = "<group>"; };
+		7D26B4F92577D3670090489F /* timeburnerbold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = timeburnerbold.ttf; sourceTree = "<group>"; };
+		7D4C628C257FDCDC0010ACF4 /* CropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
+		7D4C629A2580D6280010ACF4 /* PlayPhotos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PlayPhotos; sourceTree = "<group>"; };
+		7D4C629F25813BC10010ACF4 /* PassThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassThrough.swift; sourceTree = "<group>"; };
+		7D4C62C9258283280010ACF4 /* move.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = move.wav; sourceTree = "<group>"; };
+		7D4C62D4258294760010ACF4 /* cheers.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cheers.wav; sourceTree = "<group>"; };
+		7D4C62D7258295C90010ACF4 /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		7D4C62EC2583630C0010ACF4 /* success.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = success.mp3; sourceTree = "<group>"; };
+		7D4C62FE2583A9FA0010ACF4 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		7D4C6314258807880010ACF4 /* String+makePlural.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+makePlural.swift"; sourceTree = "<group>"; };
+		7D74D19C258B6B5B006AF1A1 /* TileMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMaker.swift; sourceTree = "<group>"; };
+		7D74D19D258B6B5B006AF1A1 /* TimerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerHelper.swift; sourceTree = "<group>"; };
+		7D74D19E258B6B5B006AF1A1 /* SoundHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundHelper.swift; sourceTree = "<group>"; };
+		7D74D19F258B6B5B006AF1A1 /* PhotosLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosLoader.swift; sourceTree = "<group>"; };
+		7D74D1A9258B6BAF006AF1A1 /* UIView+FadeInOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FadeInOut.swift"; sourceTree = "<group>"; };
+		7D74D1AC258B6BC1006AF1A1 /* UIView+AddBorders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+AddBorders.swift"; sourceTree = "<group>"; };
+		7D74D1AF258B6BCF006AF1A1 /* CGPoint+Nearest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Nearest.swift"; sourceTree = "<group>"; };
+		7D74D1B3258B6BE9006AF1A1 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		7D9D0C40257BDE5B004465E5 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShadowView.swift; path = Puzly/Classes/ShadowView.swift; sourceTree = SOURCE_ROOT; };
+		7D9D0C47257BFDEF004465E5 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
+		7D9D0C69257D587D004465E5 /* SAConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
+		7D9D0C79257E1FBA004465E5 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		7DAA0D3E258A001700AD86A1 /* UIButton+setSoundButtonInitialState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+setSoundButtonInitialState.swift"; sourceTree = "<group>"; };
+		7DB7AB282588C80900F07076 /* SoundOnOffButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundOnOffButton.swift; sourceTree = "<group>"; };
+		C2210561B6D22BCE16EC6E77 /* Pods-Puzly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzly.release.xcconfig"; path = "Target Support Files/Pods-Puzly/Pods-Puzly.release.xcconfig"; sourceTree = "<group>"; };
+		D154270D5EF8CFDEA2791CEB /* Pods-Puzly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Puzly.debug.xcconfig"; path = "Target Support Files/Pods-Puzly/Pods-Puzly.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A7270A1256D0295003CF85F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6664C5F27240CF4556BB21CD /* Pods_Puzly.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A64F9A925713C52009FFB5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7DAA0D3E258A001700AD86A1 /* UIButton+setSoundButtonInitialState.swift */,
+				7D4C62FE2583A9FA0010ACF4 /* UIViewController+Alert.swift */,
+				7D74D1A9258B6BAF006AF1A1 /* UIView+FadeInOut.swift */,
+				1A3708EC25750FEF0082AD11 /* UIView+RemoveConstraints.swift */,
+				7D74D1AC258B6BC1006AF1A1 /* UIView+AddBorders.swift */,
+				7D74D1AF258B6BCF006AF1A1 /* CGPoint+Nearest.swift */,
+				7D4C6314258807880010ACF4 /* String+makePlural.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1A72709B256D0295003CF85F = {
+			isa = PBXGroup;
+			children = (
+				1A7270A6256D0295003CF85F /* Puzly */,
+				1A7270A5256D0295003CF85F /* Products */,
+				F08290B380B082D246062AA5 /* Pods */,
+				2AC72BD878D70A7265DF4FD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1A7270A5256D0295003CF85F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A7270A4256D0295003CF85F /* Puzly.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A7270A6256D0295003CF85F /* Puzly */ = {
+			isa = PBXGroup;
+			children = (
+				1A7270B0256D0296003CF85F /* Assets.xcassets */,
+				1AF77BED257138EC007E086C /* Controller */,
+				1AF77BEC257138C9007E086C /* Model */,
+				7D9D0C44257BE318004465E5 /* Classes */,
+				1A64F9A925713C52009FFB5C /* Extensions */,
+				7D26B4F62577CB8C0090489F /* Font And Palette */,
+				7D74D199258B6B3B006AF1A1 /* Helper */,
+				7D9D0C6C257D5A5A004465E5 /* Photos and Sounds */,
+				1A7270A7256D0295003CF85F /* AppDelegate.swift */,
+				1A7270A9256D0295003CF85F /* SceneDelegate.swift */,
+				1A7270AD256D0295003CF85F /* Main.storyboard */,
+				1A7270B2256D0296003CF85F /* LaunchScreen.storyboard */,
+				1A7270B5256D0296003CF85F /* Info.plist */,
+			);
+			path = Puzly;
+			sourceTree = "<group>";
+		};
+		1AF77BEC257138C9007E086C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A3708E92574F82A0082AD11 /* PuzlyBrain.swift */,
+				1AF77BE825713897007E086C /* ImageTileState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AF77BED257138EC007E086C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D9D0C79257E1FBA004465E5 /* IntroViewController.swift */,
+				1A7270AB256D0295003CF85F /* PlayBoardViewController.swift */,
+				7D4C628C257FDCDC0010ACF4 /* CropViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2AC72BD878D70A7265DF4FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BFD2716AE6B8AB486F307C8 /* Pods_Puzly.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D26B4F62577CB8C0090489F /* Font And Palette */ = {
+			isa = PBXGroup;
+			children = (
+				7D9D0C47257BFDEF004465E5 /* Palette.swift */,
+				7D26B4F92577D3670090489F /* timeburnerbold.ttf */,
+				7D26B4F52577CB850090489F /* timeburnernormal.ttf */,
+			);
+			path = "Font And Palette";
+			sourceTree = "<group>";
+		};
+		7D74D199258B6B3B006AF1A1 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7D74D19F258B6B5B006AF1A1 /* PhotosLoader.swift */,
+				7D74D19E258B6B5B006AF1A1 /* SoundHelper.swift */,
+				7D74D19C258B6B5B006AF1A1 /* TileMaker.swift */,
+				7D74D19D258B6B5B006AF1A1 /* TimerHelper.swift */,
+			);
+			name = Helper;
+			path = ../Helper;
+			sourceTree = "<group>";
+		};
+		7D9D0C44257BE318004465E5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7D4C629F25813BC10010ACF4 /* PassThrough.swift */,
+				7D74D1B3258B6BE9006AF1A1 /* PhotosCollectionViewCell.swift */,
+				7D9D0C69257D587D004465E5 /* SAConfettiView.swift */,
+				7D9D0C40257BDE5B004465E5 /* ShadowView.swift */,
+				7DB7AB282588C80900F07076 /* SoundOnOffButton.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7D9D0C6C257D5A5A004465E5 /* Photos and Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7D4C62C9258283280010ACF4 /* move.wav */,
+				7D4C62D4258294760010ACF4 /* cheers.wav */,
+				7D4C62D7258295C90010ACF4 /* shuffle.wav */,
+				7D4C62EC2583630C0010ACF4 /* success.mp3 */,
+				7D4C629A2580D6280010ACF4 /* PlayPhotos */,
+			);
+			path = "Photos and Sounds";
+			sourceTree = "<group>";
+		};
+		F08290B380B082D246062AA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D154270D5EF8CFDEA2791CEB /* Pods-Puzly.debug.xcconfig */,
+				C2210561B6D22BCE16EC6E77 /* Pods-Puzly.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A7270A3256D0295003CF85F /* Puzly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7270B8256D0296003CF85F /* Build configuration list for PBXNativeTarget "Puzly" */;
+			buildPhases = (
+				ADC1452835464A747942C1C0 /* [CP] Check Pods Manifest.lock */,
+				1A7270A0256D0295003CF85F /* Sources */,
+				1A7270A1256D0295003CF85F /* Frameworks */,
+				1A7270A2256D0295003CF85F /* Resources */,
+				300E76B4C3C06DFCACC3362E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Puzly;
+			productName = Puzly;
+			productReference = 1A7270A4256D0295003CF85F /* Puzly.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A72709C256D0295003CF85F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					1A7270A3256D0295003CF85F = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 1A72709F256D0295003CF85F /* Build configuration list for PBXProject "Puzly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A72709B256D0295003CF85F;
+			productRefGroup = 1A7270A5256D0295003CF85F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A7270A3256D0295003CF85F /* Puzly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A7270A2256D0295003CF85F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4C62D8258295C90010ACF4 /* shuffle.wav in Resources */,
+				7D4C62CB2582833A0010ACF4 /* move.wav in Resources */,
+				1A7270B4256D0296003CF85F /* LaunchScreen.storyboard in Resources */,
+				1A7270B1256D0296003CF85F /* Assets.xcassets in Resources */,
+				7D26B4FA2577D36D0090489F /* timeburnerbold.ttf in Resources */,
+				7D26B4F72577CBD30090489F /* timeburnernormal.ttf in Resources */,
+				1A7270AF256D0295003CF85F /* Main.storyboard in Resources */,
+				7D4C629B2580D6280010ACF4 /* PlayPhotos in Resources */,
+				7D4C62ED2583630C0010ACF4 /* success.mp3 in Resources */,
+				7D4C62D5258294760010ACF4 /* cheers.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		300E76B4C3C06DFCACC3362E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Puzly/Pods-Puzly-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Puzly/Pods-Puzly-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Puzly/Pods-Puzly-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADC1452835464A747942C1C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Puzly-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A7270A0256D0295003CF85F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D9D0C7A257E1FBA004465E5 /* IntroViewController.swift in Sources */,
+				7D74D1A5258B6B5B006AF1A1 /* PhotosLoader.swift in Sources */,
+				7D74D1B4258B6BE9006AF1A1 /* PhotosCollectionViewCell.swift in Sources */,
+				7D4C62A025813BC10010ACF4 /* PassThrough.swift in Sources */,
+				7DB7AB292588C80900F07076 /* SoundOnOffButton.swift in Sources */,
+				7D9D0C41257BDE5B004465E5 /* ShadowView.swift in Sources */,
+				1A7270AC256D0295003CF85F /* PlayBoardViewController.swift in Sources */,
+				7D4C6315258807880010ACF4 /* String+makePlural.swift in Sources */,
+				7D9D0C48257BFDEF004465E5 /* Palette.swift in Sources */,
+				1A3708EA2574F82A0082AD11 /* PuzlyBrain.swift in Sources */,
+				7DAA0D3F258A001700AD86A1 /* UIButton+setSoundButtonInitialState.swift in Sources */,
+				7D74D1A4258B6B5B006AF1A1 /* SoundHelper.swift in Sources */,
+				7D4C62FF2583A9FA0010ACF4 /* UIViewController+Alert.swift in Sources */,
+				1A3708ED25750FEF0082AD11 /* UIView+RemoveConstraints.swift in Sources */,
+				1AF77BE925713897007E086C /* ImageTileState.swift in Sources */,
+				7D74D1B0258B6BCF006AF1A1 /* CGPoint+Nearest.swift in Sources */,
+				7D74D1A3258B6B5B006AF1A1 /* TimerHelper.swift in Sources */,
+				1A7270A8256D0295003CF85F /* AppDelegate.swift in Sources */,
+				7D74D1A2258B6B5B006AF1A1 /* TileMaker.swift in Sources */,
+				7D4C628D257FDCDC0010ACF4 /* CropViewController.swift in Sources */,
+				7D74D1AD258B6BC1006AF1A1 /* UIView+AddBorders.swift in Sources */,
+				7D74D1AA258B6BB0006AF1A1 /* UIView+FadeInOut.swift in Sources */,
+				1A7270AA256D0295003CF85F /* SceneDelegate.swift in Sources */,
+				7D9D0C6A257D587D004465E5 /* SAConfettiView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A7270AD256D0295003CF85F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A7270AE256D0295003CF85F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A7270B2256D0296003CF85F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A7270B3256D0296003CF85F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A7270B6256D0296003CF85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A7270B7256D0296003CF85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A7270B9256D0296003CF85F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D154270D5EF8CFDEA2791CEB /* Pods-Puzly.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = Z395QVG78R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Puzly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SwiftMessages\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TappingJames.Puzly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1A7270BA256D0296003CF85F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2210561B6D22BCE16EC6E77 /* Pods-Puzly.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = Z395QVG78R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Puzly/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"SwiftMessages\"",
+					"-framework",
+					"\"UIKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TappingJames.Puzly;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A72709F256D0295003CF85F /* Build configuration list for PBXProject "Puzly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7270B6256D0296003CF85F /* Debug */,
+				1A7270B7256D0296003CF85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7270B8256D0296003CF85F /* Build configuration list for PBXNativeTarget "Puzly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7270B9256D0296003CF85F /* Debug */,
+				1A7270BA256D0296003CF85F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A72709C256D0295003CF85F /* Project object */;
+}
